@@ -16,7 +16,7 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    // to get all users 
+      // to get all users 
     @GetMapping("/users")
     public List<User> getAllUsers() {
         return userService.getAllUsers();
@@ -36,5 +36,11 @@ public class UserController {
     @DeleteMapping("/users/{id}")
     public void deleteUser(@PathVariable Long id) {
         userService.deleteUserById(id);
+    }
+
+    @PutMapping("/users/{id}")
+    public User udateUser(@PathVariable Long id, @RequestBody User user ) {
+		return userService.udateUser(id, user);
+    	
     }
 }
