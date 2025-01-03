@@ -1,0 +1,27 @@
+# Ignore IDE-specific files
+*.iml
+*.idea/
+.idea/
+
+# Build tools files
+target/
+*.jar
+*.war
+*.class
+
+# Logs and temp files
+logs/
+*.log
+*.tmp
+*.bak
+
+# Spring Boot specific files
+*.yml
+*.properties
+
+# Dependency management
+.gradle/
+build/
+node_modules/
+npm-debug.log
+bower_components/
