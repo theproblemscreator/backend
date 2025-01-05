@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        .user-container {
+            max-width: 1200px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        .user-navigation {
+            display: flex;
+            justify-content: center;
+            background-color: #007bff;
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        .user-navigation a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-weight: bold;
+        }
+
+        .user-navigation a:hover {
+            background-color: #0056b3;
+        }
+
+        .user-content {
+            padding: 20px;
+        }
+
+        .user-card {
+            background: #ffffff;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        .user-card h2 {
+            margin-top: 0;
+        }
+
+        .user-card p {
+            color: #555;
+        }
+
+        .user-card button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .user-card button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="user-container">
+        <h1>User Dashboard</h1>
+
+        <!-- Navigation -->
+        <div class="user-navigation">
+            <a href="#">Profile</a>
+            <a href="#">Settings</a>
+            <a href="#">Logout</a>
+        </div>
+
+        <!-- Main Content -->
+        <div class="user-content">
+            <div class="user-card">
+                <h2>My Profile</h2>
+                <p>View and update your personal details.</p>
+                <button>View Profile</button>
+            </div>
+
+            <div class="user-card">
+                <h2>Settings</h2>
+                <p>Change your account settings and preferences.</p>
+                <button>Update Settings</button>
+            </div>
+
+            <div class="user-card">
+                <h2>Logout</h2>
+                <p>Log out of your account securely.</p>
+                <button>Logout</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

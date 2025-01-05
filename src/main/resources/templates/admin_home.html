@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .admin-container {
+            max-width: 1200px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        .admin-navigation {
+            display: flex;
+            justify-content: space-around;
+            background-color: #007bff;
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        .admin-navigation a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        .admin-navigation a:hover {
+            background-color: #0056b3;
+        }
+
+        .admin-content {
+            padding: 20px;
+        }
+
+        .admin-card {
+            background: #f9f9f9;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+
+        .admin-card h2 {
+            margin-top: 0;
+        }
+
+        .admin-card button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .admin-card button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="admin-container">
+        <h1>Admin Dashboard</h1>
+
+        <!-- Navigation -->
+        <div class="admin-navigation">
+            <a href="#">Dashboard</a>
+            <a href="#">Users</a>
+            <a href="#">Settings</a>
+        </div>
+
+        <!-- Main Content -->
+        <div class="admin-content">
+            <div class="admin-card">
+                <h2>User Management</h2>
+                <p>Manage registered users, roles, and permissions.</p>
+                <button>View Users</button>
+            </div>
+
+            <div class="admin-card">
+                <h2>Site Settings</h2>
+                <p>Update site configurations like themes, logos, and more.</p>
+                <button>Update Settings</button>
+            </div>
+
+            <div class="admin-card">
+                <h2>Reports</h2>
+                <p>View and generate detailed reports.</p>
+                <button>Generate Report</button>
+        
