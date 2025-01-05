@@ -3,105 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Dashboard</title>
+    <title>Admin Home</title>
     <style>
+        /* CSS for admin page */
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
             margin: 0;
-            padding: 0;
-        }
-
-        .admin-container {
-            max-width: 1200px;
-            margin: 20px auto;
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        h1 {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa; /* Light gray background for the page */
             color: #333;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
             text-align: center;
         }
 
-        .admin-navigation {
-            display: flex;
-            justify-content: space-around;
-            background-color: #007bff;
-            padding: 10px;
-            border-radius: 4px;
-        }
-
-        .admin-navigation a {
-            color: white;
-            text-decoration: none;
-            padding: 10px;
-            font-weight: bold;
-        }
-
-        .admin-navigation a:hover {
-            background-color: #0056b3;
-        }
-
-        .admin-content {
-            padding: 20px;
-        }
-
-        .admin-card {
-            background: #f9f9f9;
-            border-radius: 4px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            padding: 15px;
+        h1 {
+            font-size: 2.5em;
+            color: #007bff; /* Blue color for the heading */
             margin-bottom: 20px;
         }
 
-        .admin-card h2 {
-            margin-top: 0;
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            color: #fff;
+            background-color: #007bff; /* Blue button for admin area */
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
         }
 
-        .admin-card button {
-            background-color: #28a745;
-            color: white;
-            border: none;
-            padding: 10px 15px;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-        .admin-card button:hover {
-            background-color: #218838;
+        a:hover {
+            background-color: #0056b3; /* Darker blue on hover */
         }
     </style>
 </head>
 <body>
-    <div class="admin-container">
-        <h1>Admin Dashboard</h1>
-
-        <!-- Navigation -->
-        <div class="admin-navigation">
-            <a href="#">Dashboard</a>
-            <a href="#">Users</a>
-            <a href="#">Settings</a>
-        </div>
-
-        <!-- Main Content -->
-        <div class="admin-content">
-            <div class="admin-card">
-                <h2>User Management</h2>
-                <p>Manage registered users, roles, and permissions.</p>
-                <button>View Users</button>
-            </div>
-
-            <div class="admin-card">
-                <h2>Site Settings</h2>
-                <p>Update site configurations like themes, logos, and more.</p>
-                <button>Update Settings</button>
-            </div>
-
-            <div class="admin-card">
-                <h2>Reports</h2>
-                <p>View and generate detailed reports.</p>
-                <button>Generate Report</button>
-        
+    <h1>Welcome Admin</h1>
+    <a href="/logout">Logout</a>
+</body>
+</html>

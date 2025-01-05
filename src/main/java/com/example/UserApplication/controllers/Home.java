@@ -1,6 +1,8 @@
 package com.example.UserApplication.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -22,8 +24,20 @@ public class Home {
 	// This is for Home controller
 	@GetMapping("/")
 	public String hello() {
-		return "home";
-	}
+		 Object principal = SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+
+	        if (principal instanceof UserDetails) {
+	            UserDetails userDetails = (UserDetails) principal;
+	            if (userDetails.getAuthorities().stream().anyMatch(a -> a.getAuthority().equals("ROLE_ADMIN"))) {
+	                return "redirect:/admin/home"; 
+	            } else {
+	                return "redirect:/user/home"; 
+	            }
+	        }
+
+	        return "redirect:/home"; // Default to home if something goes wrong
+	    }
+	
 
 	// This is for Admin home controller
 	@GetMapping("/admin/home")
